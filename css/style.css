@@ -10,11 +10,17 @@
 
 .bg-miColor {
     background-color:blueviolet;
-}
-header{
+   }
+   
+.header-home{
     background-color: #744C71;
-    padding: 0px;
-    top: 0;
+    padding: 10px;
+   
+}
+
+.header-moda{
+    background-color: #744C71;
+    padding: 80px;
 }
 .navbar-brand{
     color: aliceblue;
@@ -116,7 +122,7 @@ li {
     .grid-conteiner {
         display: grid;
         grid-template-columns : repeat( 4, 500px); /* Crea tres columnas iguales */
-        grid-template-rows: repeat(4, 500px);
+        grid-template-rows: repeat(2, 500px);
         grid-template-areas: 
         "item1 item2 item3"
         "item4 item5 item6";
@@ -203,10 +209,80 @@ footer{
 .text-footer{
     font-size: 60px;
 }
-
-@media (max-width:425px){
-    .navbar{
+/*///////////////////Media Queries//////////////////////*/
+@media (max-width:1440px){
+    body{
         flex-direction: column;
         align-items: center;
+            }
+
+@media (min-width:425px){
+    body{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+  /* Estilos para todas las resoluciones */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.item {
+    text-align: center;
+}
+}
+/* Media queries */
+
+@media screen and (max-width: 1440px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item img {
+        width: 100%;
+    }
+}
+
+@media  (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .item img {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+}
+}
+/* Estilos para tablet */
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+    
+    .text-footer {
+        font-size: 18px;
+    }
+    
+    .fa {
+        font-size: 24px;
+        margin: 5px;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 480px) {
+    .text-footer {
+        font-size: 16px;
+    }
+    
+    .fa {
+        font-size: 20px;
+        margin: 3px;
     }
 }
