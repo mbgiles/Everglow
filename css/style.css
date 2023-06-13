@@ -1,247 +1,202 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Alegreya', serif;
-    
-}
-
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-
-.bg-miColor {
-    background-color:blueviolet;
-   }
-   
-.header-home{
-    background-color: #744C71;
-    padding: 0.625em;
-   
-}
-
-.header-moda{
-    background-color: #744C71;
-    padding: 3%;
-}
-.navbar-brand{
-    color: aliceblue;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Alegreya', serif;
-    font-size: 40px;
-}
-
-.nav-link{
-    color: aliceblue;
-    font-size: 20px;
-}
-.nav-link :active{
-    color: darkgrey;
-}
-a{
-    text-decoration: none;
-    font-size: 30px;
-    color: aliceblue;
-}
-h1{ 
-    color: aliceblue;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Alegreya', serif;
-    font-size: 40px;
-}
-li {
-    display:inline;
-    padding:100px;
-    list-style: none;
-}
-.container-cards{
-    margin-top: 40px;
-    margin-bottom: 40px;
-
-}
-/**main**/
-.section-principal{
-    width: 100%;
-    height: 700px;
-    background-image: url("../assets/portada.jpg");
-    background-size: cover;
-    
-}
-.text-principal{
-    color: #8c6ba1;
-    padding: 20%;
-    text-align:left; 
-}
-
-
-
-.articulo{
-    width:70%;
-    margin: auto;
-    height: 50%;
-    flex-direction: row;
-    justify-content: center;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 .articulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  width: 70%;
+  margin: auto;
+  height: 50%;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-
 
 .item {
-    text-align: center;
+  text-align: center;
 }
 
 .item img {
-    width: 200%;
-    height:100%;
+  width: 200%;
+  height: 100%;
 }
 
 .item h3 {
-    max-height:30%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    line-height: 1.6;
-    margin-top: 10px;
+  max-height: 30%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  line-height: 1.6;
+  margin-top: 10px;
 }
 
+/*GRID*/
+.grid-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+  grid-template-rows: repeat(2, 500px);
+  grid-template-areas: "item1 item2 item3" "item4 item5 item6";
+  gap: 100px;
+  padding: 5%;
+}
 
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.item5 {
+  grid-area: item5;
+}
+
+.item6 {
+  grid-area: item6;
+}
+
+.item img {
+  width: 20%;
+}
+
+.item p {
+  margin-top: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Alegreya", serif;
+}
 
 .material-icons {
-    font-size: 50px;
-    color: aliceblue;
-    }
-
-
-    .grid-conteiner {
-        display: grid;
-        grid-template-columns : repeat( 3, 500px); /* Crea tres columnas iguales */
-        grid-template-rows: repeat(2, 500px);
-        grid-template-areas: 
-        "item1 item2 item3"
-        "item4 item5 item6";
-        gap: 100px;
-        padding: 5%;
-      
-        }
-    
-    .item1{
-        grid-area: item1;
-    }
-    .item2 {
-        grid-area: item2;
-    }
-    .item3 {
-        grid-area: item3;
-    }
-    .item4{
-        grid-area: item4;
-    }
-    .item5{
-        grid-area: item5;
-    }
-    .item6{
-        grid-area: item6;
-    }
-    .item img {
-        width: 20%;
-    }
-    
-    .item p {
-        margin-top: 10px;
-    }
-    
-    
-.belleza-tittle{
-    text-align: center;
-    margin: 25px;
+  font-size: 50px;
+  color: aliceblue;
 }
-.section-principal-celebrities{
-    width: 100%;
-    height: 700px;
-    background-image: url("../assets/banner-principal-pag4.jpg");
-    background-size: cover;
-    
+
+.header-home {
+  background-color: #744C71;
+  padding: 0.625em;
 }
-.articulo-celebrities{
-    display: flex;
+
+header {
+  background-color: #744C71;
+  padding: 3%;
+}
+
+.navbar-brand {
+  color: aliceblue;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Alegreya", serif;
+  font-size: 40px;
+}
+
+.nav-link {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.nav-link :active {
+  color: darkgrey;
+}
+
+a {
+  text-decoration: none;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+h1 {
+  color: aliceblue;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Alegreya", serif;
+  font-size: 40px;
+}
+
+li {
+  display: inline;
+  padding: 100px;
+  list-style: none;
+}
+
+.section-principal {
+  width: 100%;
+  height: 700px;
+  background-image: url("../assets/portada.jpg");
+  background-size: cover;
+}
+
+.text-principal {
+  color: #8c6ba1;
+  padding: 20%;
+  text-align: left;
+}
+
+.belleza-tittle {
+  text-align: center;
+  margin: 25px;
+}
+
+.moda-seleccion {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+  grid-template-rows: repeat(3, 500px);
+  grid-template-areas: "item1 item2 item3 item4 item5 item6";
+  gap: 100px;
+  padding: 5%;
+}
+
+footer {
+  background-color: #906f8d;
+  padding: 100px;
+  color: aliceblue;
+  text-align: center;
+  text-decoration: none;
+}
+
+.text-footer {
+  font-size: 60px;
+}
+
+@media (min-width: 768px) {
+  .header-moda {
     flex-direction: row;
-    margin: 30px;
-    justify-content:left;
+    justify-content: space-around;
+  }
+  .grid-conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
-.text-inicio{
-    margin: 50px;
-}
-
-.texto-liderazgo{
-    text-align: center;
-    display: flex;
-    padding: 100px;
-    margin-right: 50px;
-}
-.subtitulo-liderazgo{
-    padding: 60px;
-    color: #A45C54;
-}
-
-.banner{
-    width: 100%;
-    height: 500px;
-    background-image: url("../assets/banner.jpg");
-    justify-content: center;
-    gap: 20px;
-    margin: 10px;
+@media (min-width: 320px) {
+  .header-moda {
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    grid-template-rows: 4, 1fr;
+  }
+  .grid-conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 }
 
-footer{
-    background-color: #906f8d;
-    padding: 100px;
-    color: aliceblue;
-    text-align: center;
-    text-decoration: none;
-
-}
-.text-footer{
-    font-size: 60px;
-}
-/*///////////////////Media Queries/////////////////////*/
-
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding-bottom: 20px;
-}
-/* modifique grid */
-@media (min-width:768px){
-    .header-moda{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-   .grid-conteiner{
-            display: grid;
-            grid-template-columns:repeat(3,1fr);
-            grid-template-rows: repeat(2,1fr);
-    }
-}
-@media (min-width:320px){
-    .header-moda{
-        display: grid;
-            grid-template-columns:(3,1fr);
-            grid-template-rows: (4,1fr);
-        
-    }
-.grid-conteiner{
-            display: grid;
-            grid-template-columns:repeat(3,1fr);
-            grid-template-rows: repeat(1,1fr);
-    }
-
-}
+/*# sourceMappingURL=style.css.map */
