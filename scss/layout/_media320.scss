@@ -1,0 +1,14 @@
+@media (min-width:320px){
+    .header-moda{
+        display: grid;
+            grid-template-columns:(3,1fr);
+            grid-template-rows: (4,1fr);
+        
+    }
+.grid-conteiner{
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows: repeat(1,1fr);
+    }
+
+}

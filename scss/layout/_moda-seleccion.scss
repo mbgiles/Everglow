@@ -1,0 +1,8 @@
+.moda-seleccion {
+    @include grid(
+      repeat(3, 500px), // columnas
+      repeat(3, 500px), // filas
+      "item1 item2 item3 item4 item5 item6", // áreas
+      100px, // espacio entre las celdas
+      5% // relleno de la cuadrícula
+    );}

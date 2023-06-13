@@ -1,0 +1,37 @@
+
+.navbar-brand {
+        color: aliceblue;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Alegreya', serif;
+        font-size: 40px;
+    }
+    
+    .nav-link {
+    color: aliceblue;
+    font-size: 20px;
+    }
+    
+    .nav-link :active {
+            color: darkgrey;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 30px;
+        color: aliceblue;
+    }
+    
+    h1 {
+        color: aliceblue;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Alegreya', serif;
+        font-size: 40px;
+    }
+    
+    li {
+        display: inline;
+        padding: 100px;
+        list-style: none;
+    }
