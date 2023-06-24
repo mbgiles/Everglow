@@ -1,4 +1,13 @@
 .container-cards {
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 30%;
+    gap: 10px;
     }
+    .navbar {
+        --bs-navbar-brand-margin-end: 10rem;
+        }
+        .card{
+            --bs-card-spacer-y: 4rem;
+        }
+        
+    

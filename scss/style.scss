@@ -1,10 +1,14 @@
 @import "./utilities/variables";
+@import "./layout/body";
 @import "./utilities/mixins";
+@import "./components/boostrap";
 @import "./base/reset";
 @import "./base/typo";
+@import "./utilities/animaciones";
 @import "./layout/header";
 @import "./layout/nav";
 @import "./layout/main";
+@import "./layout/section";
 @import "./layout/moda-seleccion";
 
 @import "./layout/footer";

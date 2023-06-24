@@ -1,4 +1,4 @@
-@mixin grid ($col,$row,$areas,$gap,$padding) {
+@mixin grid($col, $row, $areas, $gap, $padding) {
   display: grid;
   grid-template-columns: $col;
   grid-template-rows: $row;
@@ -21,69 +21,62 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  .item {
+    text-align: center;
+
+    img {
+      width: 200%;
+      height: 100%;
+    }
+
+    h3 {
+      max-height: 30%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+  }
 }
 
-.item {
-  text-align: center;
+/*GRID*/
+.grid-conteiner {
+  @include grid(repeat(3, 500px), repeat(2, 500px), "item1 item2 item3" "item4 item5 item6", 100px, 5%);
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.item5 {
+  grid-area: item5;
+}
+
+.item6 {
+  grid-area: item6;
 }
 
 .item img {
-  width: 200%;
-  height: 100%;
+  width: 20%;
 }
 
-.item h3 {
-  max-height: 30%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
-  line-height: 1.6;
+.item p {
   margin-top: 10px;
 }
-
-
-
-  /*GRID*/
-  .grid-conteiner {
-      display: grid;
-      grid-template-columns: repeat(3, 500px);
-      grid-template-rows: repeat(2, 500px);
-      grid-template-areas:
-        "item1 item2 item3"
-        "item4 item5 item6";
-      gap: 100px;
-      padding: 5%;
-    }
-    
-    .item1 {
-      grid-area: item1;
-    }
-    
-    .item2 {
-      grid-area: item2;
-    }
-    
-    .item3 {
-      grid-area: item3;
-    }
-    
-    .item4 {
-      grid-area: item4;
-    }
-    
-    .item5 {
-      grid-area: item5;
-    }
-    
-    .item6 {
-      grid-area: item6;
-    }
-    
-    .item img {
-      width: 20%;
-    }
-    
-    .item p {
-      margin-top: 10px;
-    }
-     
+.grid {
+  @include grid(repeat(3, 500px), repeat(2, 500px), "item1 item2 item3" "item4 item5 item6", 100px, 5%);
+}

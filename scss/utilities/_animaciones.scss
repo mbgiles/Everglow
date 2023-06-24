@@ -1,0 +1,11 @@
+
+
+.img-animacion{
+    overflow: hidden;
+}
+.img-animacion img{
+    transition: transform 0.3s;
+}
+.img-animacion:hover img {
+    transform: scale(1.1);
+}

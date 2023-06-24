@@ -1,14 +1,16 @@
-@media (min-width:320px){
-    .header-moda{
-        display: grid;
-            grid-template-columns:(3,1fr);
-            grid-template-rows: (4,1fr);
-        
+@media (max-width: 320px) {
+    .grid {
+        display: block;
     }
-.grid-conteiner{
-            display: grid;
-            grid-template-columns:repeat(3,1fr);
-            grid-template-rows: repeat(1,1fr);
+    
+    .item {
+        width: 100%;
+        }
+        .img-animacion{
+            width: 80%;
+        }
+        .img{
+            width: 100%;
+        }
     }
-
-}
+ 
