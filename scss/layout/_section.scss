@@ -1,5 +1,11 @@
 
+    p{
+        margin-top: 0;
+        width: 90%;
+        text-align: center;
+    }
     .parrafo {
+        display: flex;
         background-color: #F5CDC0;
         width: 90%;
         height: 60px;
@@ -13,7 +19,14 @@
             text-align: center;
             gap: 10%;
             padding-bottom: 5%;
+            margin: 2%;
             }
+        .h3, h3{
+            font-size:large;
+            text-align: center;
+            margin-right: -140%;
+            
+        }
 
     .empoderamiento {
     width: 60%;
