@@ -28,7 +28,6 @@
   padding-left: 10%;
   clear: both;
 
-
   .imagen {
     display: flex;
     width: 40%;
@@ -37,7 +36,8 @@
     gap: 5%;
   }
   .imagen2 {
-    width: 100%;
+    display: flex;
+    width: 200%;
     margin-left: 20%;
     border-radius: 3%;
     gap: 5%;
